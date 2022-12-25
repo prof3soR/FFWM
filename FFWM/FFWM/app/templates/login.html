@@ -1,0 +1,10 @@
+<!-- templates/login.html -->
+
+<h1>Log In</h1>
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+  </form>
+<a href="http://127.0.0.1:8000/sign-up/">Create an account! </a>
+
